@@ -17,13 +17,20 @@ public class NetworkedClient : MonoBehaviour
     bool isConnected = false;
     int ourClientID;
 
-    // Start is called before the first frame update
+
+    [SerializeField]
+    GameSystemManager gameSystemManager;
+
+    public GameStates gameState;
+    [SerializeField]
+    GameObject[] arrMainMenuItems;
+
     void Start()
     {
         Connect();
+        gameState = GameStates.MainMenu;
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateNetworkConnection();
@@ -50,7 +57,6 @@ public class NetworkedClient : MonoBehaviour
                 case NetworkEventType.DataEvent:
                     string msg = Encoding.Unicode.GetString(recBuffer, 0, dataSize);
                     ProcessRecievedMsg(msg, recConnectionID);
-                    //Debug.Log("got msg = " + msg);
                     break;
                 case NetworkEventType.DisconnectEvent:
                     isConnected = false;
@@ -102,6 +108,23 @@ public class NetworkedClient : MonoBehaviour
     private void ProcessRecievedMsg(string msg, int id)
     {
         Debug.Log("msg recieved = " + msg + ".  connection id = " + id);
+
+        string[] csv = msg.Split(',');
+        ServerToClientSignifier _signifier = (ServerToClientSignifier)System.Enum.Parse(typeof(ServerToClientSignifier), csv[0]);
+
+        if (_signifier == ServerToClientSignifier.LoginComplete)
+        {
+            gameSystemManager.AccessToAccount();
+        }
+        else if (_signifier == ServerToClientSignifier.GameStart)
+        {
+            gameState = GameStates.TicTacToe;
+            gameSystemManager.StartGame();
+        }
+        else if (_signifier == ServerToClientSignifier.OpponentPlays)
+        {
+            Debug.Log("OpponentPlays!!!!");
+        }
     }
 
     public bool IsConnected()

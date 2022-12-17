@@ -10,7 +10,12 @@ public class GameSystemManager : MonoBehaviour
     [SerializeField]
     GameObject NewAccountLayer;
     [SerializeField]
-    GameObject LogingAccountLayer;
+    GameObject LoggingAccountLayer;
+
+    [SerializeField]
+    GameObject joinGameButton;
+    [SerializeField]
+    GameObject TicTacToeButton;
 
     public void NewAccountButtonLayer()
     {
@@ -20,7 +25,7 @@ public class GameSystemManager : MonoBehaviour
     public void LoginButtonLayer()
     {
         FirstLayer.SetActive(false);
-        LogingAccountLayer.SetActive(true);
+        LoggingAccountLayer.SetActive(true);
     }
 
     public void BackToMenuFromNewAccount()
@@ -32,22 +37,18 @@ public class GameSystemManager : MonoBehaviour
     public void BackToMenuFromLogin()
     {
         FirstLayer.SetActive(true);
-        LogingAccountLayer.SetActive(false);
+        LoggingAccountLayer.SetActive(false);
     }
 
-}
+    public void AccessToAccount()
+    {
+        LoggingAccountLayer.SetActive(false);
+        joinGameButton.SetActive(true);
+    }
 
-enum ClientToServerSignifier
-{
-    CreatedAccount = 0,
-    Login
-}
-
-enum ServerToClientSignifier
-{
-    LoginComplete = 0,
-    LoginFailed,
-    AccountCreationComplete,
-    AccountCreationFailed,
-
+    public void StartGame()
+    {
+        joinGameButton.SetActive(false);
+        TicTacToeButton.SetActive(true);
+    }
 }

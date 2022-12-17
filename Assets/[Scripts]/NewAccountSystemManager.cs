@@ -23,7 +23,7 @@ public class NewAccountSystemManager : MonoBehaviour
 
     public void CreatedAccountButton()
     {
-        string msg = (int)ClientToServerSignifier.CreatedAccount + "," + userInput.text + "," + passwordInput.text;
+        string msg = ClientToServerSignifier.CreatedAccount + "," + userInput.text + "," + passwordInput.text;
         networkedClient.SendMessageToHost(msg);
         Debug.Log(msg);
     }

@@ -23,7 +23,7 @@ public class LoginSystemManager : MonoBehaviour
 
     public void LoginAccountButton()
     {
-        string msg = (int)ClientToServerSignifier.Login + "," + userInput.text + "," + passwordInput.text;
+        string msg = ClientToServerSignifier.Login + "," + userInput.text + "," + passwordInput.text;
         networkedClient.SendMessageToHost(msg);
         Debug.Log(msg);
     }
