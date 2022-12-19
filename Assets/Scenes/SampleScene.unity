@@ -960,6 +960,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1773,6 +1781,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2008,6 +2024,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2583,6 +2607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2820,7 +2852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &697793740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2863,6 +2895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSymbol: 0
+  opponentSymbol: 0
   isPlayerTurn: 0
   markBehaivor:
   - {fileID: 1427426322}
@@ -2992,7 +3025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &834863843
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3100,7 +3133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &874957578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3114,6 +3147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSystemManager: {fileID: 1716669602}
+  ticTacToeTable: {fileID: 697793741}
   gameState: 0
   arrMainMenuItems: []
 --- !u!4 &874957579
@@ -3143,6 +3177,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3876,6 +3918,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4434,6 +4484,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4536,7 +4594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1244390292
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6242,6 +6300,7 @@ MonoBehaviour:
   LoggingAccountLayer: {fileID: 776815166}
   joinGameButton: {fileID: 1728504377}
   TicTacToeButton: {fileID: 2062669684}
+  TicTacToeGame: {fileID: 697793739}
 --- !u!4 &1716669603
 Transform:
   m_ObjectHideFlags: 0
@@ -6944,6 +7003,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarkSpace (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: ticTacToeTable
+      value: 
+      objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8025,6 +8092,10 @@ PrefabInstance:
       propertyPath: ticTacToeTable
       value: 
       objectReference: {fileID: 697793741}
+    - target: {fileID: 5862275582599586127, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
+      propertyPath: networkedClient
+      value: 
+      objectReference: {fileID: 874957578}
     - target: {fileID: 7611253093770373389, guid: bdcf44d60f50a364f9a039a8c801bff2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

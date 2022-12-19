@@ -16,6 +16,8 @@ public class GameSystemManager : MonoBehaviour
     GameObject joinGameButton;
     [SerializeField]
     GameObject TicTacToeButton;
+    [SerializeField]
+    GameObject TicTacToeGame;
 
     public void NewAccountButtonLayer()
     {
@@ -49,6 +51,7 @@ public class GameSystemManager : MonoBehaviour
     public void StartGame()
     {
         joinGameButton.SetActive(false);
-        TicTacToeButton.SetActive(true);
+        //TicTacToeButton.SetActive(true);
+        TicTacToeGame.SetActive(true);
     }
 }

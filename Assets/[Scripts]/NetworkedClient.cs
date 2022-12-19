@@ -20,6 +20,8 @@ public class NetworkedClient : MonoBehaviour
 
     [SerializeField]
     GameSystemManager gameSystemManager;
+    [SerializeField]
+    TicTacToeTable ticTacToeTable;
 
     public GameStates gameState;
     [SerializeField]
@@ -124,6 +126,23 @@ public class NetworkedClient : MonoBehaviour
         else if (_signifier == ServerToClientSignifier.OpponentPlays)
         {
             Debug.Log("OpponentPlays!!!!");
+        }
+        else if (_signifier == ServerToClientSignifier.YourTurn)
+        {
+            ticTacToeTable.isPlayerTurn = true;
+        }
+        else if (_signifier == ServerToClientSignifier.SetSymbols)
+        {
+            if (csv[1] == "x")
+            {
+                ticTacToeTable.playerSymbol = Symbol.X;
+                ticTacToeTable.opponentSymbol = Symbol.O;
+            }
+
+        }
+        else if (_signifier == ServerToClientSignifier.UpdateMarks)
+        {
+            ticTacToeTable.UpdateTable(csv[1]);
         }
     }
 

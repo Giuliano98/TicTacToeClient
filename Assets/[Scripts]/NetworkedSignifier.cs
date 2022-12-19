@@ -11,7 +11,9 @@ public enum ClientToServerSignifier
     CreatedAccount = 0,
     Login,
     JoinQueueFromGameRoom,
-    TicTacToeGamePlay
+    TicTacToeGamePlay,
+    PlayerPlayed,
+    StringTable,
 }
 
 public enum ServerToClientSignifier
@@ -21,7 +23,10 @@ public enum ServerToClientSignifier
     AccountCreationComplete,
     AccountCreationFailed,
     GameStart,
-    OpponentPlays
+    OpponentPlays,
+    SetSymbols,
+    YourTurn,
+    UpdateMarks
 }
 
 public enum LoadingAndSavingSignifier
